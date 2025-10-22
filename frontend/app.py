@@ -24,8 +24,8 @@ if st.button("Predict Heating Load"):
                      overall_height, orientation, glazing_area, glazing_area_dist]
     }
     try:
-        # backend URL (change for deployment)
-        api_url = "http://127.0.0.1:5000/predict"
+        api_url = "https://energy-efficiency-api.onrender.com/predict"
+
         response = requests.post(api_url, json=data)
         if response.status_code == 200:
             result = response.json()['predicted_heating_load']
