@@ -18,7 +18,7 @@ ga = st.number_input("Glazing Area", 0.0, 1.0, 0.1, format="%.3f")
 gad = st.number_input("Glazing Area Distribution (1-5)", 1, 5, 5, step=1)
 
 # Backend URL
-api_default = "http://127.0.0.1:5000"
+api_default = "https://energy-efficiency-api.onrender.com"
 base_url = st.text_input("Backend base URL (no trailing slash)", api_default)
 
 # fetch available models from backend
